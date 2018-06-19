@@ -26,118 +26,109 @@
     </header>
     <section id="noticias">
       <div class="container">
-        <div class="titulonoticias">Últimas notícias</div>
-        <div class="trescolunas">
-          <h2>Título 1</h2>
-          <h5>Texto intro</h5>
-
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="">Leia mais</a>
-          </p>
-
+        <h1>Últimas notícias</h1>
+        <div class="trescolunas-container">
+          <div class="trescolunas noticia-container">
+            <h2>Título 1</h2>
+            <h5>Texto intro</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="">Leia mais</a>
+            </p>
+          </div>
+          <div class="trescolunas noticia-container">
+            <h2>Serviço 2</h2>
+            <h5>serviço em destaque 1</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="">conheça mais</a>
+            </p>
+          </div>
+          <div class="trescolunas noticia-container">
+            <h2>Serviço 3</h2>
+            <h5>serviço em destaque 1</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="">conheça mais</a>
+            </p>
+          </div>
+          <div class="linknoticias">leia todas</div>
         </div>
+      </div>
+    </section>
 
-        <div class="trescolunas">
-          <h2>Serviço 2</h2>
-          <h5>serviço em destaque 1</h5>
-
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="">conheça mais</a>
-          </p>
+    <section class="banner banner3">
+      <div class="container">
+        <div class="frente_banner">
+          <h1>Contato</h1>
+          <p>Envie uma mensagem e logo entraremos em contato</p>
+          <p><a class="btn-banner" href="">Enviar mensagem</a></p>
         </div>
       </div>
 
-      <div class="trescolunas">
-        <h2>Serviço 3</h2>
-        <h5>serviço em destaque 1</h5>
+    </section>
+    <section class="banner">
 
+      <div class="container">
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="">conheça mais</a>
-        </p>
-        <div class="linknoticias">leia todas</div>
+        <!--frenter_banner será utilizada para criar uma película transparente sobbre a imagem, assim daremos mais contraste com fonte-->
+        <div class="frente_banner">
+
+          <h1>Quem somos</h1>
+          <p>Conheça mais da nossa história</p>
+          <p><a class="btn-banner" href="">Conhecer</a></p>
+        </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-  
-  <section class="banner banner3">
-    <div class="container">
-      <div class="frente_banner">
-        <h1>Contato</h1>
-        <p>Envie uma mensagem e logo entraremos em contato</p>
-        <p><a class="btn-banner" href="">Conhecer</a></p>
+    <section id="contatos">
+      <div class="container">
+        <!--Mesmo raciocínio da classe três colunas-->
+        <div class="contatos-content">
+          <form action="index.html" method="get">
+            <div class="grupo-controle">
+              <input type="text" name="txtnome" class="controle" id="nome" required placeholder="Nome">
+            </div>
+            <div class="grupo-controle">
+              <input type="email" name="email" class="controle" id="email" placeholder="e-mail">
+            </div>
+            <div class="grupo-controle">
+              <textarea name="msg" id="msg" rows="3" class="controle" placeholder="mensagem"></textarea>
+            </div>
+            <div class="grupo-controle">
+              <button type="reset" class="botao clear">Limpar</button>
+              <button type="submit" class="botao submit">Enviar</button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
+    </section>
 
-  </section>
-  <section class="banner">
-
-    <div class="container">
-        
-      <!--frenter_banner será utilizada para criar uma película transparente sobbre a imagem, assim daremos mais contraste com fonte-->
-      <div class="frente_banner">
-
-        <h1>Quem somos</h1>
-        <p>Conheça mais da nossa história</p>
-        <p><a class="btn-banner" href="">Conhecer</a></p>
+    <footer id="rodapepag">
+      <div class="container">
+        <div class="rodapepag-content">
+          <div class="logo trescolunas"><a href="/index.html"><img src="imagens/logo.png"></a></div>
+          <nav class="mapasite trescolunas">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="#quemsomos">QUEM SOMOS</a></li>
+              <li><a href="#servicos">SERVIÇOS</a></li>
+              <li><a href="#contatos">CONTATO</a></li>
+              <li><a href="precos.html">PREÇOS</a></li>
+            </ul>
+          </nav>
+          <nav class="social trescolunas">
+            <ul>
+              <li><a href="#"><i data-feather="facebook"></i></a></li>
+              <li><a href="#"><i data-feather="instagram"></i></a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-  </section>
+    </footer>
+  </div>
+    <script src="js/alert-index.js"></script>
+    <script src="js/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+  </body>
 
-  <section id="contatos">
-    <div class="container">
-      <!--Mesmo raciocínio da classe três colunas-->
-      <div class="duascolunas">
-        <form action="index.html" method="get">
-          <div class="grupo-controle">
-            <input type="text" name="txtnome" class="controle" id="nome" required placeholder="Nome">
-          </div>
-          <div class="grupo-controle">
-            <input type="email" name="email" class="controle" id="email" placeholder="e-mail">
-          </div>
-          <div class="grupo-controle">
-            <textarea name="msg" id="msg" rows="3" class="controle" placeholder="mensagem"></textarea>
-          </div>
-          <div class="grupo-controle">
-            <button type="submit" class="botao">Enviar</button>
-            <button type="reset" class="botao">Limpar</button>
-          </div>
-        </form>
-      </div>
-      <div class="duascolunas">
-        <img src="imagens/contato.png" alt="contato.png">
-      </div>
-    </div>
-  </section>
-
-
-  <footer id="rodapepag">
-    <div class="container">
-      <h1 class="logo trescolunas"><a href="/index.html">Logo</a></h1>
-      <nav class="mapasite trescolunas">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="#quemsomos">QUEM SOMOS</a></li>
-          <li><a href="#servicos">SERVIÇOS</a></li>
-          <li><a href="#contatos">CONTATO</a></li>
-          <li><a href="precos.html">PREÇOS</a></li>
-        </ul>
-      </nav>
-      <nav class="social trescolunas">
-        <ul>
-          <li><a href="" class="face"><span>facebook</span></a></li>
-          <li><a href="" class="twit"><span>twitter</span></a></li>
-          <li><a href="" class="inst"><span>Intagram</span></a></li>
-        </ul>
-      </nav>
-    </div>
-    
-  </footer>
-</div>
-<div>
-</body>
-
-</html>
+  </html>

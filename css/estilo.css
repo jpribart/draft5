@@ -14,12 +14,12 @@
 }
 
 .topofixo{
-    position: fixed;
-    height: 210px !important;
-    width: 100% !important;
-    z-index: 1000;
-    box-sizing: border-box;
-    transition: all 2s;
+  position: fixed;
+  height: 210px !important;
+  width: 100% !important;
+  z-index: 1000;
+  box-sizing: border-box;
+  transition: all 2s;
 }
 
 /* para todas as paginas */
@@ -94,51 +94,62 @@ h1, h2, h3, h4, h5, h6 {
   /*Definindo que a imagem terá a largura para preencher todo o elemento*/
   min-height: 380px;
 
-                                  /*Altura mínima da caixa. Coloque menor que a imagem*/
-                                  text-align: center;
-                                  color: white;
-                                  box-sizing: border-box;
-                                  /*Definindo que as dimensões (height, width) será o limite de crescimento da caixa*/
-                                }
+  /*Altura mínima da caixa. Coloque menor que a imagem*/
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  /*Definindo que as dimensões (height, width) será o limite de crescimento da caixa*/
+}
 
-                                .banner h2 {
-                                  color: #699DBB;
-                                  font-family: "Lobster Two", cursive;
-                                }
+.banner h2 {
+  color: #699DBB;
+  font-family: "Lobster Two", cursive;
+}
 
-                                /*mudando as imagens do banner*/
+/*mudando as imagens do banner*/
 
-                                .banner2 {
-                                  background-image: url(../imagens/servico.jpg);
-                                }
+.banner2 {
+  background-image: url(../imagens/servico.jpg);
+}
 
-                                .banner3 {
-                                  background-image: url(../imagens/contato.jpg);
-                                }
+.banner3 {
+  background-image: url(../imagens/contato.jpg);
+}
 
-                                /*Criando uma película transparente sobre a imagem*/
-                                
-                                .frente_banner {
+/*Criando uma película transparente sobre a imagem*/
 
-                                  min-height: 380px;
-                                  padding-top: 100px;
-                                  
-                                }
+.frente_banner {
+
+  min-height: 380px;
+  padding-top: 100px;
+
+}
 
 
-                                .btn-banner {
-                                  border: 0;
-                                  padding: 15px;
-                                  background: rgb(255, 40, 40);
-                                  text-decoration: none;
-                                  color: white;
-                                  display: inline-block;
-                                  margin-top: 20px;
-                                }
+.btn-banner {
+  border: 0;
+  padding: 15px;
+  background: rgb(255, 40, 40);
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin-top: 20px;
+}
 
-                                .trescolunas {
-                                  float: left;
-                                  width: calc(100%/3);
+.trescolunas-container {
+  width: 100%;
+  min-height: 429px;
+}
+
+.trescolunas {
+  float: left;
+  width: calc(89.7%/3);
+  box-sizing: border-box;
+  padding: 48px 26px;
+  margin: 20px;
+  border-radius: 0px;
+  color: #444;
+}
   /*O CSS3 permite calcular valores, já que a intenção era criar
   três colunas do mesmo tabalho, dividi o tamanho do container por 3*/
   box-sizing: border-box;
@@ -147,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .titulonoticias{
   padding: 10px;
-  font-size: 30px;
+  font-size: 2em;
 }
 .linknoticias{
   border: 0;
@@ -157,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   display: inline-block;
   margin-top: 15px;
-  margin-left: 200px;
+  float: right;
 }
 
 .duascolunas {
@@ -177,6 +188,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   min-height: 325px;
   color: white;
+  margin-top: 40px;
+}
+
+.noticia-container {
+  background-color: white;
 }
 
 /**
@@ -184,15 +200,19 @@ h1, h2, h3, h4, h5, h6 {
 */
 
 #contatos {
-  min-height: 320px;
   background-color: #333;
   color: white;
   text-align: center;
 }
 
+.contatos-content {
+  width: 60%;
+  padding: 46px 0;
+}
+
 #contatos form {
   text-align: left;
-  padding-top: 20px;
+  width: 100%;
 }
 
 #contatos img {
@@ -219,10 +239,10 @@ h1, h2, h3, h4, h5, h6 {
 .controle {
   display: block;
   /*transformando em elemento em bloco para ocupar toda a extensão disponível*/
-  padding: 2px;
-  border: 1px solid rgba(1, 19, 212, 0.25);
-  border-radius: 3px;
+  padding: 12px 20px;
   line-height: 24px;
+  height: 50px;
+  outline: none;
   /*configurando altura entre linhas*/
   box-sizing: border-box;
   width: 100%;
@@ -240,11 +260,20 @@ h1, h2, h3, h4, h5, h6 {
 /*Aparência do botão*/
 
 .botao {
-  padding: 5px 10px;
-  border-radius: 3px;
-  background-color: #0113D4;
-  border-color: #0113D4;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 25px;
+  border-radius: none;
   color: #fff;
+  font-size: 1.2em;
+}
+
+.clear {
+  background-color: rgb(197, 193, 194);
+}
+
+.submit {
+  background-color: rgb(255, 40, 40);
 }
 
 /**
@@ -252,8 +281,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 
 #rodapepag {
-  background-color: #699DBB;
-  padding: 30px 0 50px 0;
+  background-color: #b83933;
   position: relative;
   /*Criando um contexto de posicionamento para posicionar copyright*/
   float: left;
@@ -264,15 +292,26 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
 }
 
+.rodapepag-content {
+  display: flex;
+  flex-direction: row;
+}
+
 /**
 * REDE SOCIAL
 */
 
 .social {
   border: none;
+  display: flex;
 }
 
 /*posicionando os icones da rede social um ao lado do outro e retirando o sublinhad*/
+
+.social ul {
+  display: flex;
+  align-items: center;
+}
 
 .social li {
   display: inline-block;
@@ -294,30 +333,6 @@ h1, h2, h3, h4, h5, h6 {
   /*oculta um elemento*/
 }
 
-/*inserindo a imagem de fundo e posicionando-a*/
-
-.face {
-  background: url(../imagens/social-media.png) no-repeat;
-  background-position: -5px -3px;
-  background-size: 150px;
-}
-
-.twit {
-  background: url(../imagens/social-media.png) no-repeat;
-  background-position: -52px -3px;
-  background-size: 150px;
-}
-
-.inst {
-  background: url(../imagens/social-media.png) no-repeat;
-  background-position: -98px -3px;
-  background-size: 150px;
-}
-
-/**
-* FIM REDE SOCIAL
-*/
-
 /**
 * Nav rodape
 */
@@ -325,6 +340,7 @@ h1, h2, h3, h4, h5, h6 {
 #rodapepag nav li {
   font-size: 0.8rem;
   line-height: 1.5rem;
+  display: block;
 }
 
 #rodapepag nav li a {
@@ -332,11 +348,13 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
-#rodapepag .trescolunas {
-  padding-left: 100px;
+#rodapepag .logo img {
+  width: 100%;
 }
 
-
+.mapasite {
+  display: flex;
+}
 
 /**
 * página interna
