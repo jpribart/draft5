@@ -1,0 +1,402 @@
+/* css reset*/
+*{
+  padding: 0;
+  margin: 0 auto;
+  border: 0;
+}
+
+
+body {
+  font-family: Lato, sans-serif;
+  /*Definindo a fonte padrão da página*/
+  font-size: 125%;
+  max-width: 1170px;
+  background-image: url(../imagens/back.png);
+
+  /*O tamanho padrão é 16px, para facilitar o cálculo declaramos o tamanho
+    da fonte em 125%, o que corresponderá a 20px*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 110%;
+  /*reconfigurando a altura das linhas*/
+  margin-bottom: 1.2rem;
+  /*Margem inferior 1.2 vez o tamanho da fonte padrão (1.2 x 20px)*/
+}
+
+/*Classe para centralizar o conteúdo*/
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1280px;
+  /*define o tamanho máximo que o elemento pode alcançar*/
+  min-width: 800px;
+  /*definindo o tamanho mínimo que o elemento pode alcançar*/
+  position: relative;
+  /*Declarando position relative para criar um contexto de posicionamento
+    e com isso posicionar um elemento interno de forma absoluta, sendo a referência para posicionar
+    será o pŕoprio container*/
+}
+
+#headertopo {
+  background-color: #201F24;
+  padding: 20px;
+  border-top: 2px solid #437FA1;
+  /*borda superior do cabeçalho*/
+}
+
+/**
+* LOGOO SUPERIOR
+*/
+
+.logo {
+  font-family: 'Lobster Two', cursive;
+  /*fonte da logo*/
+  font-size: 1.8rem;
+  /*tamanho da fonte da logo*/
+}
+
+.logo a {
+  text-decoration: none;
+  /*retirando o sublinhado do hiperlink da logo*/
+  color: black;
+}
+
+/**
+*BARRA DE NAVEGAÇÃO SUPERIOR
+**/
+
+/*posicionando a barra de navegação*/
+
+#headertopo nav {
+  position: absolute;
+  top: 30%;
+  right: 298px
+}
+
+/*Essa é uma alternativa para criar barra de navegações horizontas, declarando flot: left.
+Também poderia utilizar o display: inline-block;*/
+
+#headertopo nav ul li {
+  float: left;
+  padding: 0 15px;
+  font-size: 1rem;
+  list-style: none;
+  
+}
+
+/*Aparência do hiperlink*/
+
+#headertopo nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  /*Retirando sublinhado*/
+}
+
+/**
+*BANNER
+*/
+
+.banner {
+  
+  background-image: url(https://media.giphy.com/media/vhyig2EW1Wdby/giphy.gif);
+  background-repeat: no-repeat;
+  /*configurando para imagem não repetir*/
+  background-attachment: fixed;
+  /*Definindo que ela vai ficar fixa no local em que
+                                  foi inserido, desta forma cria um efeito de uma janela
+                                  para visualizar a imagem*/
+  background-size: cover;
+  /*Definindo que a imagem terá a largura para preencher todo o elemento*/
+  min-height: 380px;
+
+  /*Altura mínima da caixa. Coloque menor que a imagem*/
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  /*Definindo que as dimensões (height, width) será o limite de crescimento da caixa*/
+}
+
+.banner h2 {
+  color: #699DBB;
+  font-family: "Lobster Two", cursive;
+}
+
+/*mudando as imagens do banner*/
+
+.banner2 {
+  background-image: url(../imagens/servico.jpg);
+}
+
+.banner3 {
+  background-image: url(../imagens/contato.jpg);
+}
+
+/*Criando uma película transparente sobre a imagem*/
+
+.frente_banner {
+ 
+  min-height: 380px;
+  padding-top: 100px;
+ 
+}
+
+.btn-banner {
+  border: 0;
+  padding: 15px;
+  background: rgb(255, 40, 40);
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.trescolunas {
+  float: left;
+  width: calc(100%/3);
+  /*O CSS3 permite calcular valores, já que a intenção era criar
+    três colunas do mesmo tabalho, dividi o tamanho do container por 3*/
+  box-sizing: border-box;
+  /*estabelecendo o limite de crescimento da caixa a borda*/
+  padding: 20px;
+}
+.linknoticias{
+      border: 0;
+    padding: 15px;
+    background: rgb(255, 40, 40);
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 200px;
+}
+.duascolunas {
+  float: left;
+  width: calc(100%/2);
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+/**
+*QUEM SOMOS
+*/
+
+#quemsomos {
+      background: #201F24;
+    padding: 1px;}
+
+/**
+*SERVICOS
+*/
+
+#servicos {
+  text-align: center;
+  min-height: 410px;
+  background-color: gray;
+  color: white;
+}
+
+/**
+*Contatos
+*/
+
+#contatos {
+  min-height: 320px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+#contatos form {
+  text-align: left;
+  padding-top: 20px;
+}
+
+#contatos img {
+  max-height: 250px;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/**
+* EXEMPLO DE ESTILOS PARA FORMULÁRIO
+*/
+
+/*controlando a distância entre os controles*/
+
+.grupo-controle {
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/*Definindo a aparência do controle*/
+
+.controle {
+  display: block;
+  /*transformando em elemento em bloco para ocupar toda a extensão disponível*/
+  padding: 2px;
+  border: 1px solid rgba(1, 19, 212, 0.25);
+  border-radius: 3px;
+  line-height: 24px;
+  /*configurando altura entre linhas*/
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/*Aparência do controle quando receber o foco do cursor do mouse*/
+
+.controle:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: rgba(1, 19, 212, 0.25);
+  box-shadow: 0 0 0 2px rgba(1, 19, 212, 0.25);
+}
+
+/*Aparência do botão*/
+
+.botao {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: #0113D4;
+  border-color: #0113D4;
+  color: #fff;
+}
+
+/**
+*RODAPE PÁGINA
+*/
+
+#rodapepag {
+  background-color: #699DBB;
+  padding: 30px 0 50px 0;
+  position: relative;
+  /*Criando um contexto de posicionamento para posicionar copyright*/
+  float: left;
+  /*fluturando o elemento para que possamos recolocar seu conteúdo dentor
+                 dele*/
+  width: 100%;
+  /*devolvendo a lagura*/
+  box-sizing: border-box;
+}
+
+/**
+* REDE SOCIAL
+*/
+
+.social {
+  border: none;
+}
+
+/*posicionando os icones da rede social um ao lado do outro e retirando o sublinhad*/
+
+.social li {
+  display: inline-block;
+  list-style: none;
+}
+
+/*transformando o hiperlink em bloco para poder redimensionar o hiperlink*/
+
+.social li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+/*retirando o texto do a*/
+
+.social li a span {
+  display: none;
+  /*oculta um elemento*/
+}
+
+/*inserindo a imagem de fundo e posicionando-a*/
+
+.face {
+  background: url(../imagens/social-media.png) no-repeat;
+  background-position: -5px -3px;
+  background-size: 150px;
+}
+
+.twit {
+  background: url(../imagens/social-media.png) no-repeat;
+  background-position: -52px -3px;
+  background-size: 150px;
+}
+
+.inst {
+  background: url(../imagens/social-media.png) no-repeat;
+  background-position: -98px -3px;
+  background-size: 150px;
+}
+
+/**
+* FIM REDE SOCIAL
+*/
+
+/**
+* Nav rodape
+*/
+
+#rodapepag nav li {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+#rodapepag nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#rodapepag .trescolunas {
+  padding-left: 100px;
+}
+
+
+
+/**
+* página interna
+*/
+
+main {
+  min-height: 380px;
+  background: #eee;
+  padding: 20px;
+}
+
+/*Aplicando linha na tabela*/
+
+table, td, th {
+  border: 1px solid #a4a4a4;
+  border-collapse: collapse;
+  /*Juntarar as linhas*/
+}
+
+td, th {
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+/*Estilizando o cabeçalho da tabela*/
+
+thead tr {
+  background: #699DBB;
+  color: white;
+}
+
+/*Selecionando linha pares*/
+
+tbody tr:nth-child(2n) {
+  background: white;
+}
+
+/*Selecionando a linha quando o mouse estiver sobre ela*/
+
+tbody tr:hover {
+  background: #699DBB;
+}
