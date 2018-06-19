@@ -1,69 +1,52 @@
 <!DOCTYPE html>
-  <html>
-      <head>
-        <title>Exemplo</title>
-          <meta charset="UTF-8">
-          <link rel="icon" href="imagens/logo.png">
-          <link href="css/estilo.css" rel="stylesheet">
-      </head>
-    <body>
-      <header id="headertopo">
-        <div class="container">
-          <img src="imagens/logo.png" width="100px">
-          <nav id="navtopo">
-            <ul>
-              <li><a href="">HOME</a></li>
-              
-              <li><a href="#noticias">NOTICIAS</a></li>
-              <li><a href="#campeonatos">CAMEPAONATOS</a></li>
-              <li><a href="precos.html">JOGOS</a></li>
-              <li><a href="#contatos">CONTATO</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <!--Seção para inserir um banner (imagem de fundo com um texto)-->
-      <section class="banner">
-        
-        <div class="container">
-
-          <!--frenter_banner será utilizada para criar uma película transparente sobbre a imagem, assim daremos mais contraste com fonte-->
-          <div class="frente_banner">
-            <h1>Quem somos</h1>
-            <p>Conheça mais da nossa história</p>
-            <p><a class="btn-banner" href="">Conhecer</a></p>
-          </div>
-        </div>
-      </section>
-      <section id="quemsomos">
-        
-      </section>
-      <!--as propriedades banner2 e banner3, alteram a imagem de fundo-->
-  
-  <section id="servicos">
-    <div class="container">
-        <div class="titulonoticias">Noticias do cenário</div>
-      <!--A intenção da classe trescolunas é contruir um layout com três colunas do mesmo tamanho. Como as colunas terão as mesmas caracterítiscas, criamos uma classe, ao invés, de atribuir um nome para cada uma-->
-      <div class="trescolunas">
-
-        <h2>Serviço 1</h2>
-        <h5>serviço em destaque 1</h5>
-
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="">conheça mais</a>
-        </p>
-
+<html>
+<head>
+  <title>DRAFT5</title>
+  <meta charset="UTF-8">
+  <link rel="icon" href="imagens/icon.png">
+  <link href="css/estilo.css" rel="stylesheet">
+  <script src="assets/scroolmenu.js"></script>
+</head>
+<body>
+  <div id="tudoindex">
+    <header id="headertopo">
+      <div class="container">
+        <a href="index.html"><img src="imagens/logo.png" width="100px"></a>
+        <nav id="navtopo">
+          <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="#noticias">NOTICIAS</a></li>
+            <li><a href="#campeonatos">CAMPEONATOS</a></li>
+            <li><a href="#jogos">JOGOS</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            <li><a href="#quemsomos">NOS CONHEÇA</a></li>
+          </ul>
+        </nav>
       </div>
+    </header>
+    <section id="noticias">
+      <div class="container">
+        <div class="titulonoticias">Últimas notícias</div>
+        <div class="trescolunas">
+          <h2>Título 1</h2>
+          <h5>Texto intro</h5>
 
-      <div class="trescolunas">
-        <h2>Serviço 2</h2>
-        <h5>serviço em destaque 1</h5>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="">Leia mais</a>
+          </p>
+
+        </div>
+
+        <div class="trescolunas">
+          <h2>Serviço 2</h2>
+          <h5>serviço em destaque 1</h5>
 
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="">conheça mais</a>
-        </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="">conheça mais</a>
+          </p>
+        </div>
       </div>
 
       <div class="trescolunas">
@@ -79,6 +62,7 @@
 
     </div>
   </section>
+  
   <section class="banner banner3">
     <div class="container">
       <div class="frente_banner">
@@ -88,6 +72,19 @@
       </div>
     </div>
 
+  </section>
+  <section class="banner">
+
+    <div class="container">
+        
+      <!--frenter_banner será utilizada para criar uma película transparente sobbre a imagem, assim daremos mais contraste com fonte-->
+      <div class="frente_banner">
+
+        <h1>Quem somos</h1>
+        <p>Conheça mais da nossa história</p>
+        <p><a class="btn-banner" href="">Conhecer</a></p>
+      </div>
+    </div>
   </section>
 
   <section id="contatos">
@@ -139,6 +136,8 @@
     </div>
     
   </footer>
+</div>
+<div>
 </body>
 
 </html>

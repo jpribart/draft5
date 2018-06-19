@@ -1,176 +1,165 @@
-/* css reset*/
+
+
+
+/* REFERENTE A TODAS AS PAGINAS DO SITE */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+
+
+/* css reset */
 *{
   padding: 0;
   margin: 0 auto;
   border: 0;
 }
 
+.topofixo{
+    position: fixed;
+    height: 210px !important;
+    width: 100% !important;
+    z-index: 1000;
+    box-sizing: border-box;
+    transition: all 2s;
+}
 
+/* para todas as paginas */
 body {
-  font-family: Lato, sans-serif;
-  /*Definindo a fonte padrão da página*/
-  font-size: 125%;
+  font-size: 18px;
   max-width: 1170px;
   background-image: url(../imagens/back.png);
-
-  /*O tamanho padrão é 16px, para facilitar o cálculo declaramos o tamanho
-    da fonte em 125%, o que corresponderá a 20px*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* aborda todo o conteudo do site */
+#tudoindex{
+  /* sem declaraçoes */
+}
+
+/* referente aos elementos de todas as paginas */
 h1, h2, h3, h4, h5, h6 {
-  line-height: 110%;
-  /*reconfigurando a altura das linhas*/
-  margin-bottom: 1.2rem;
-  /*Margem inferior 1.2 vez o tamanho da fonte padrão (1.2 x 20px)*/
+  margin-bottom: 25px;
+  line-height: 7px;
 }
 
-/*Classe para centralizar o conteúdo*/
+/* referente ao header do topo que inclui o menu */
+#headertopo {
+  padding: 20px;
+  
+}
 
+/* menu referente a todas as paginas do site */
 .container {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   max-width: 1280px;
-  /*define o tamanho máximo que o elemento pode alcançar*/
   min-width: 800px;
-  /*definindo o tamanho mínimo que o elemento pode alcançar*/
   position: relative;
-  /*Declarando position relative para criar um contexto de posicionamento
-    e com isso posicionar um elemento interno de forma absoluta, sendo a referência para posicionar
-    será o pŕoprio container*/
 }
 
-#headertopo {
-  background-color: #201F24;
-  padding: 20px;
-  border-top: 2px solid #437FA1;
-  /*borda superior do cabeçalho*/
-}
-
-/**
-* LOGOO SUPERIOR
-*/
-
-.logo {
-  font-family: 'Lobster Two', cursive;
-  /*fonte da logo*/
-  font-size: 1.8rem;
-  /*tamanho da fonte da logo*/
-}
-
-.logo a {
-  text-decoration: none;
-  /*retirando o sublinhado do hiperlink da logo*/
-  color: black;
-}
-
-/**
-*BARRA DE NAVEGAÇÃO SUPERIOR
-**/
-
-/*posicionando a barra de navegação*/
-
+/* posicionando a barra de navegação */
 #headertopo nav {
   position: absolute;
   top: 30%;
-  right: 298px
+  right: 330px;
 }
 
-/*Essa é uma alternativa para criar barra de navegações horizontas, declarando flot: left.
-Também poderia utilizar o display: inline-block;*/
-
+/* colocando a barra de navegaçao em horizontal */
 #headertopo nav ul li {
-  float: left;
+  display: inline-block;
   padding: 0 15px;
   font-size: 1rem;
   list-style: none;
-  
 }
 
-/*Aparência do hiperlink*/
-
+/* retirando o sublinhado */
 #headertopo nav ul li a {
   color: #000000;
   text-decoration: none;
-  /*Retirando sublinhado*/
 }
 
-/**
-*BANNER
-*/
-
+/* referente a jogos */
 .banner {
-  
-  background-image: url(https://media.giphy.com/media/vhyig2EW1Wdby/giphy.gif);
+
+  /*background-image: url(https://media.giphy.com/media/vhyig2EW1Wdby/giphy.gif);*/
   background-repeat: no-repeat;
   /*configurando para imagem não repetir*/
+
   background-attachment: fixed;
   /*Definindo que ela vai ficar fixa no local em que
-                                  foi inserido, desta forma cria um efeito de uma janela
-                                  para visualizar a imagem*/
+  foi inserido, desta forma cria um efeito de uma janela
+  para visualizar a imagem*/
   background-size: cover;
   /*Definindo que a imagem terá a largura para preencher todo o elemento*/
   min-height: 380px;
 
-  /*Altura mínima da caixa. Coloque menor que a imagem*/
-  text-align: center;
-  color: white;
+                                  /*Altura mínima da caixa. Coloque menor que a imagem*/
+                                  text-align: center;
+                                  color: white;
+                                  box-sizing: border-box;
+                                  /*Definindo que as dimensões (height, width) será o limite de crescimento da caixa*/
+                                }
+
+                                .banner h2 {
+                                  color: #699DBB;
+                                  font-family: "Lobster Two", cursive;
+                                }
+
+                                /*mudando as imagens do banner*/
+
+                                .banner2 {
+                                  background-image: url(../imagens/servico.jpg);
+                                }
+
+                                .banner3 {
+                                  background-image: url(../imagens/contato.jpg);
+                                }
+
+                                /*Criando uma película transparente sobre a imagem*/
+                                
+                                .frente_banner {
+
+                                  min-height: 380px;
+                                  padding-top: 100px;
+                                  
+                                }
+
+
+                                .btn-banner {
+                                  border: 0;
+                                  padding: 15px;
+                                  background: rgb(255, 40, 40);
+                                  text-decoration: none;
+                                  color: white;
+                                  display: inline-block;
+                                  margin-top: 20px;
+                                }
+
+                                .trescolunas {
+                                  float: left;
+                                  width: calc(100%/3);
+  /*O CSS3 permite calcular valores, já que a intenção era criar
+  três colunas do mesmo tabalho, dividi o tamanho do container por 3*/
   box-sizing: border-box;
-  /*Definindo que as dimensões (height, width) será o limite de crescimento da caixa*/
+  /*estabelecendo o limite de crescimento da caixa a borda*/
+  padding: 20px;
 }
-
-.banner h2 {
-  color: #699DBB;
-  font-family: "Lobster Two", cursive;
+.titulonoticias{
+  padding: 10px;
+  font-size: 30px;
 }
-
-/*mudando as imagens do banner*/
-
-.banner2 {
-  background-image: url(../imagens/servico.jpg);
-}
-
-.banner3 {
-  background-image: url(../imagens/contato.jpg);
-}
-
-/*Criando uma película transparente sobre a imagem*/
-
-.frente_banner {
- 
-  min-height: 380px;
-  padding-top: 100px;
- 
-}
-
-.btn-banner {
+.linknoticias{
   border: 0;
   padding: 15px;
   background: rgb(255, 40, 40);
   text-decoration: none;
   color: white;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-left: 200px;
 }
 
-.trescolunas {
-  float: left;
-  width: calc(100%/3);
-  /*O CSS3 permite calcular valores, já que a intenção era criar
-    três colunas do mesmo tabalho, dividi o tamanho do container por 3*/
-  box-sizing: border-box;
-  /*estabelecendo o limite de crescimento da caixa a borda*/
-  padding: 20px;
-}
-.linknoticias{
-      border: 0;
-    padding: 15px;
-    background: rgb(255, 40, 40);
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    margin-top: 15px;
-    margin-left: 200px;
-}
 .duascolunas {
   float: left;
   width: calc(100%/2);
@@ -178,22 +167,15 @@ Também poderia utilizar o display: inline-block;*/
   padding: 20px;
 }
 
-/**
-*QUEM SOMOS
-*/
-
-#quemsomos {
-      background: #201F24;
-    padding: 1px;}
 
 /**
 *SERVICOS
 */
 
-#servicos {
+#noticias {
+
   text-align: center;
-  min-height: 410px;
-  background-color: gray;
+  min-height: 325px;
   color: white;
 }
 
@@ -276,7 +258,7 @@ Também poderia utilizar o display: inline-block;*/
   /*Criando um contexto de posicionamento para posicionar copyright*/
   float: left;
   /*fluturando o elemento para que possamos recolocar seu conteúdo dentor
-                 dele*/
+  dele*/
   width: 100%;
   /*devolvendo a lagura*/
   box-sizing: border-box;
@@ -399,4 +381,9 @@ tbody tr:nth-child(2n) {
 
 tbody tr:hover {
   background: #699DBB;
+}
+/* referente a pagina contato */
+.contatopage1{
+  min-height: 130px;
+  padding-top: 100px;
 }
